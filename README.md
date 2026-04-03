@@ -2,7 +2,7 @@
 
 > **A high-performance Neural Archive & Retrieval-Augmented Generation (RAG) engine — built for precision, speed, and a bold Neo-Brutalist aesthetic.**
 
-![Hero Image](./screenshots/hero.png)
+![Hero Image](./screenshots/dark.jpeg)
 
 ---
 
@@ -53,7 +53,7 @@ The **Stanza Engine** is a **decoupled, production-ready RAG pipeline** designed
 
 ## 📤 File Upload (Ingestion)
 
-![Upload Screenshot](./screenshots/upload.png)
+![Upload Screenshot](./screenshots/ingest.jpeg)
 
 * Upload a PDF document
 * Automatically queued for background processing
@@ -63,7 +63,7 @@ The **Stanza Engine** is a **decoupled, production-ready RAG pipeline** designed
 
 ## ❓ Asking Questions (Query Interface)
 
-![Query Screenshot](./screenshots/query.png)
+![Query Screenshot](./screenshots/query.jpeg)
 
 * Ask natural language questions
 * Query is embedded locally
@@ -73,7 +73,7 @@ The **Stanza Engine** is a **decoupled, production-ready RAG pipeline** designed
 
 ## 💬 AI Response (RAG Output)
 
-![Answer Screenshot](./screenshots/answer.png)
+![Answer Screenshot](./query/answer.jpeg)
 
 * Context-aware answers generated from your documents
 * Uses retrieved "stanzas" for grounded responses
@@ -83,7 +83,7 @@ The **Stanza Engine** is a **decoupled, production-ready RAG pipeline** designed
 
 ## 🌞 Light Mode UI
 
-![Light Mode Screenshot](./screenshots/light-mode.png)
+![Light Mode Screenshot](./screenshots/ingest.jpeg)
 
 * Full Neo-Brutalist design preserved
 * Clean high-contrast light theme
@@ -95,7 +95,7 @@ The **Stanza Engine** is a **decoupled, production-ready RAG pipeline** designed
 
 | Dark Mode                        | Light Mode                             |
 | -------------------------------- | -------------------------------------- |
-| ![Dark](./screenshots/query.png) | ![Light](./screenshots/light-mode.png) |
+| ![Dark](./screenshots/dark.jpeg) | ![Light](./screenshots/query.jpeg) |
 
 ---
 
