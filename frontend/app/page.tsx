@@ -37,7 +37,8 @@ export default function StanzaChat() {
     Array.from(fileList).forEach(file => formData.append('files', file));
 
     try {
-      const res = await fetch('http://192.168.1.34:8000/api/upload', {
+      // Switched to localhost for stable connection
+      const res = await fetch('http://localhost:8000/api/upload', {
         method: 'POST',
         body: formData,
       });
@@ -74,7 +75,8 @@ export default function StanzaChat() {
     setIsLoading(true);
 
     try {
-      const res = await fetch('http://192.168.1.34:8000/api/query', {
+      // Switched to localhost for stable connection
+      const res = await fetch('http://localhost:8000/api/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: userMsg }),
@@ -138,7 +140,7 @@ export default function StanzaChat() {
              <Activity size={12} />
              <span>TELEMETRY</span>
           </div>
-          <p className={darkMode ? 'text-purple-300' : 'text-green-600'}>NODE: 192.168.1.34:8000</p>
+          <p className={darkMode ? 'text-purple-300' : 'text-green-600'}>NODE: localhost:8000</p>
         </div>
       </aside>
 

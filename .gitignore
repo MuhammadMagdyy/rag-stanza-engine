@@ -1,4 +1,4 @@
-.env
+backend/.env
 .idea/
 local_cache/
 qdrant_storage/

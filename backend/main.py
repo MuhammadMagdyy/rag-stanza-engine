@@ -19,10 +19,10 @@ app = FastAPI(title="Stanza Studio API")
 
 app.add_middleware(
     CORSMiddleware,
-    # We update the origins to match the 192.168.1.34 IP from your terminal
     allow_origins=[
         "http://localhost:3000",
-        "http://192.168.1.34:3000"
+        "http://127.0.0.1:3000",
+        "http://192.168.1.34:3000",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -151,10 +151,10 @@ async def query(request: QueryRequest):
         return {"answer": f"System Error: {str(e)}"}
 
 
-# Register both functions
+# Correctly mount the Inngest handler to the FastAPI app
 inngest.fast_api.serve(app, inngest_client, [process_pdf, query_archive_task])
 
 if __name__ == "__main__":
     import uvicorn
-    # Changing host to 0.0.0.0 allows the server to be found at 192.168.1.34
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    # Pass the 'app' object directly for proper startup
+    uvicorn.run(app, host="0.0.0.0", port=8000)
