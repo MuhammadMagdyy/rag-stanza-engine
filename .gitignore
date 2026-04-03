@@ -1,0 +1,9 @@
+.env
+.idea/
+local_cache/
+qdrant_storage/
+stanzas_archive/
+__pycache__/
+*.pdf
+node_modules/
+.next/
